@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center center;
+    background-color: palegoldenrod;
+    font-family: 'Montserrat', sans-serif;
+}
+.box{
+    width: fit-content;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 5px 3px 2px hsla(0, 0%, 0%, 0.301);
+    padding: 2em;
+}
+header{
+    margin-bottom: 2rem;
+}
+
+.main{
+    background-color: #fff;   
+    display: grid;   
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-flow: row wrap;
+}
+
+.post{
+    padding: 0.5em;
+    background-color: #000;
+    font-size: 5rem;
+    color: gold;
+}
+.label{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+
+@media screen and  (max-width: 768px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
